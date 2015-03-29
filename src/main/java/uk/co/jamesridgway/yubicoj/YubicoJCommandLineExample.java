@@ -28,7 +28,7 @@ public class YubicoJCommandLineExample {
 
         // Validate and load arguments
         if (args.length == 3) {
-            clientId = Integer.parseInt(args[0]);
+            clientId = new Integer(Integer.parseInt(args[0]));
             secretKey = args[1];
             otp = args[2];
         } else {
